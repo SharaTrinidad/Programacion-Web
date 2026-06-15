@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Navbar from "./components/Navbar";
-
+import "./App.css";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import CartPage from "./pages/CartPage";
@@ -62,7 +62,7 @@ function App() {
 
     <>
 
-      <Navbar />
+      <Navbar cart={cart} />
 
       <div id="inicio">
         <Home />

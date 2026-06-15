@@ -11,17 +11,21 @@ function ProductCard({ product, onAdd }) {
                     className="card-img-top"
                     style={{
                         height: "250px",
-                        objectFit: "contain",
-                        padding: "10px"
+                        width: "100%",
+                        objectFit: "cover"
                     }}
                 />
 
                 <div className="card-body">
 
+                    <span className="badge bg-secondary mb-2">
+                        {product.category}
+                    </span>
+
                     <h5>{product.title}</h5>
 
-                    <p>
-                        S/ {product.price}
+                    <p className="fw-bold">
+                        S/ {product.price.toFixed(2)}
                     </p>
 
                     <button

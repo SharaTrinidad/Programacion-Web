@@ -25,10 +25,15 @@ function Home() {
 
               </p>
 
-              <button className="btn btn-warning btn-lg">
-
+              <button
+                className="btn btn-warning btn-lg"
+                onClick={() =>
+                  document
+                    .getElementById("menu")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
+              >
                 Ordenar Ahora
-
               </button>
 
             </div>
@@ -65,6 +70,11 @@ function Home() {
               <img
                 src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
                 className="card-img-top"
+                style={{
+                height: "250px",
+                width: "100%",
+                objectFit: "cover"
+                 }}
               />
 
               <div className="card-body">
@@ -86,11 +96,16 @@ function Home() {
               <img
                 src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
                 className="card-img-top"
+                style={{
+                height: "250px",
+                width: "100%",
+                objectFit: "cover"
+                 }}
               />
 
               <div className="card-body">
 
-                <h5>Hamburguesa Clásica</h5>
+                <h5>Hamburguesa</h5>
 
                 <p>S/ 20.00</p>
 
@@ -107,11 +122,16 @@ function Home() {
               <img
                 src="https://images.unsplash.com/photo-1600891964092-4316c288032e"
                 className="card-img-top"
+                style={{
+                height: "250px",
+                width: "100%",
+                objectFit: "cover"
+                 }}
               />
 
               <div className="card-body">
 
-                <h5>Pollo Broaster</h5>
+                <h5>Bistec</h5>
 
                 <p>S/ 25.00</p>
 

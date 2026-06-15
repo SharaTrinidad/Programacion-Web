@@ -1,4 +1,4 @@
-function Navbar() {
+function Navbar({ cart = [] }) {
 
   const scrollTo = (id) => {
     document.getElementById(id)
@@ -32,7 +32,7 @@ function Navbar() {
           className="btn btn-link text-white"
           onClick={() => scrollTo("carrito")}
         >
-          Carrito
+          🛒 Carrito ({cart.length})
         </button>
 
       </div>
